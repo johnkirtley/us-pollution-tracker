@@ -22,9 +22,10 @@ export const CityInfo = (props) => {
 
 	return (
 		<div>
-			<p>City Data</p>
-			<Weather weather={info.weather} />
-			<Pollution pollution={info.pollution} />
+			<div className='city-info'>
+				<Weather weather={info.weather} />
+				<Pollution pollution={info.pollution} />
+			</div>
 		</div>
 	);
 };
