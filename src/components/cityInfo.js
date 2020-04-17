@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Styled from 'styled-components';
 
 import { Weather } from './Weather';
 import { Pollution } from './Pollution';
@@ -20,11 +21,21 @@ export const CityInfo = (props) => {
 			});
 	}, [props.city, props.state]);
 
+	const InfoContainer = Styled.div`
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2%;
+	`;
+
 	return (
 		<div>
-			<p>City Data</p>
-			<Weather weather={info.weather} />
-			<Pollution pollution={info.pollution} />
+			<div className='city-info'>
+				<InfoContainer>
+					<Weather weather={info.weather} />
+					<Pollution pollution={info.pollution} />
+				</InfoContainer>
+			</div>
 		</div>
 	);
 };

@@ -28,7 +28,7 @@ export const Country = () => {
 
 	return (
 		<div>
-			<p>Dropdown</p>
+			<h2>Select Your State Below</h2>
 			<select id='states' onChange={onSelect}>
 				<option selected='Select State' disabled>
 					Select State
