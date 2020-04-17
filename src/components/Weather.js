@@ -16,7 +16,7 @@ export const Weather = (props) => {
 			) : (
 				<WeatherContainer className='max-w-sm rounded overflow-hidden shadow-lg'>
 					<p className='font-bold text-xl mb-2'>Weather Information</p>
-					<p>Temperature: {props.weather.tp}</p>
+					<p>Temperature: {props.weather.tp}° Celsius</p>
 					<p>Humidity: {props.weather.hu}%</p>
 					<p>Wind Speed: {props.weather.ws} m/s</p>
 				</WeatherContainer>
